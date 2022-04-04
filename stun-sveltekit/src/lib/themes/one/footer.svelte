@@ -1,13 +1,9 @@
 <script>
-
 </script>
 
 <footer>
-    <div class="container">
-
-    </div>
+    <div class="container" />
 </footer>
 
 <style>
-    
 </style>
