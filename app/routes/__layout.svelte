@@ -1,6 +1,6 @@
 <script>
-    import Header from "../../public/themes/one/header.svelte";
-    import Footer from "../../public/themes/one/footer.svelte";
+    import Header from "$lib/themes/one/header.svelte";
+    import Footer from "$lib/themes/one/footer.svelte";
 </script>
 
 <svelte:head>

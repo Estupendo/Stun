@@ -26,7 +26,7 @@ const config = {
         },
         endpointExtensions: ['.js', '.ts'],
         files: {
-            assets: 'public/themes/' + stunInfo.theme + '/assets',
+            assets: 'app/lib/themes/' + stunInfo.theme + '/assets',
             hooks: 'app/hooks',
             lib: 'app/lib',
             params: 'app/params',
