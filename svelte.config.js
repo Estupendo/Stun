@@ -1,3 +1,6 @@
+import adapter from '@sveltejs/adapter-static';
+import stunInfo from './stun.config.js';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
     // options passed to svelte.compile (https://svelte.dev/docs#compile-time-svelte-compile)
@@ -7,7 +10,7 @@ const config = {
     extensions: ['.svelte'],
 
     kit: {
-        adapter: undefined,
+        adapter: adapter(),
         amp: false,
         appDir: '_app',
         browser: {
@@ -23,13 +26,13 @@ const config = {
         },
         endpointExtensions: ['.js', '.ts'],
         files: {
-            assets: 'static',
-            hooks: 'src/hooks',
-            lib: 'src/lib',
-            params: 'src/params',
-            routes: 'src/routes',
-            serviceWorker: 'src/service-worker',
-            template: 'src/html/app.html'
+            assets: 'public/themes/' + stunInfo.theme + '/assets',
+            hooks: 'app/hooks',
+            lib: 'app/lib',
+            params: 'app/params',
+            routes: 'app/routes',
+            serviceWorker: 'app/service-worker',
+            template: 'public/static/app.html'
         },
         floc: false,
         inlineStyleThreshold: 0,
